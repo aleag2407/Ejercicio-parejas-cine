@@ -1,0 +1,27 @@
+-- Definición de la tabla Seats
+CREATE TABLE Seats (
+    id INTEGER PRIMARY KEY,
+    row TEXT NOT NULL,
+    column INTEGER NOT NULL,
+    status TEXT NOT NULL,
+    type TEXT NOT NULL
+);
+
+-- Definición de la tabla Complements
+CREATE TABLE Complements (
+    id INTEGER PRIMARY KEY,
+    category TEXT NOT NULL,
+    name TEXT NOT NULL,
+    price REAL NOT NULL
+);
+
+-- Definición de la tabla Sales
+CREATE TABLE Sales (
+    id INTEGER PRIMARY KEY,
+    seat_id INTEGER NOT NULL,
+    complement_ids TEXT,
+    customer_id TEXT NOT NULL,
+    date TEXT NOT NULL,
+    FOREIGN KEY (seat_id) REFERENCES Seats(id),
+    FOREIGN KEY (complement_ids) REFERENCES Complements(id)
+);
