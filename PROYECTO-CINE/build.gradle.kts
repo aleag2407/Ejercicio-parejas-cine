@@ -14,6 +14,7 @@ dependencies {
     implementation("com.google.code.gson:gson:2.8.8")
     implementation ("org.xerial:sqlite-jdbc:3.36.0.3")
     implementation("com.opencsv:opencsv:5.5.1")
+    implementation("com.squareup.sqldelight:runtime-jvm:1.5.5")
 }
 
 tasks.test {

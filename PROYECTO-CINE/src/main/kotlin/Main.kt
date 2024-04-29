@@ -7,7 +7,7 @@ import service.CinemaServiceImpl
 import util.DatabaseManager
 
 fun main() {
-    val databaseManager = DatabaseManager("jdbc:sqlite:cinema.db")
+    val databaseManager = DatabaseManager("src/main/sqldelight/cinemadb/CinemaDatabase.sq")
     val repository = CinemaRepositoryImpl(databaseManager)
     val service = CinemaServiceImpl(repository)
 

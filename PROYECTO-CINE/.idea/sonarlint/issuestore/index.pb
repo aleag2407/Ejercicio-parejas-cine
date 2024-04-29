@@ -27,3 +27,9 @@ j
 :src/main/kotlin/exceptions/EntradaNoDisponibleException.kt,f\d\fd8014e029a4e55c45c7685c7f2cf8ab26c3060a
 e
 5src/main/kotlin/exceptions/TicketNotFoundException.kt,1\b\1bbe304bd0c0c904f2dbff653c591e7b725bcc89
+]
+-src/main/sqldelight/ticketsdb/ticketEntyty.sq,0\9\095a0c4c6d07cf9681a4c99b899890044cb4c910
+^
+.src/main/sqldelight/cinemadb/CinemaDatabase.sq,0\e\0e1f1809b7718b01d36864ed78a8379a224980af
+A
+gradle.properties,2\a\2afbb999f001938c88fa43fc2ef52abf0f8213e4
