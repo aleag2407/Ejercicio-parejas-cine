@@ -8,18 +8,18 @@ import java.sql.DriverManager
 import java.sql.SQLException
 
 
-class DatabaseManager(s: String) {
-    private lateinit var connection: Connection
+class DatabaseManager(url: String) {
+    private var connection: Connection? = null
 
     init {
-        // Inicializa la conexión en el constructor
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver")
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydatabase", "username", "password")
-        } catch (e: SQLException) {
+            Class.forName("org.sqlite.JDBC")
+            connection = DriverManager.getConnection("jdbc:sqlite:$url")
+        } catch (e: Exception) {
             e.printStackTrace()
         }
     }
+
 
     private val seats: MutableMap<String, Seat> = mutableMapOf()
     private val customers: MutableMap<String, Customer> = mutableMapOf()
@@ -80,13 +80,11 @@ class DatabaseManager(s: String) {
         tickets.remove(ticketId)
     }
 
-    // Método para obtener la conexión a la base de datos
     fun getConnection(): Connection? {
         return connection
     }
 
-    // Método para cerrar la conexión a la base de datos
     fun close() {
-        connection.close()
+        connection?.close()
     }
 }

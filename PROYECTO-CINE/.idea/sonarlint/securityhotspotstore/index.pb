@@ -4,14 +4,6 @@
 G
 src/main/kotlin/Main.kt,d\8\d83ae3847b7d408136086cc5e9e95f5f7c126ed5
 N
-src/main/kotlin/models/Cine.kt,b\9\b913a77df133ad276f8a1efd1d485582e41e12ca
-P
- src/main/kotlin/models/Butaca.kt,b\8\b88177f24defb5294ae1672c6752b01ca90ea7aa
-S
-#src/main/kotlin/enums/TipoButaca.kt,b\6\b6884287888d7a3d16fe8fa6db7ac9b37a3522bc
-U
-%src/main/kotlin/enums/EstadoButaca.kt,c\d\cdf9932a06636ad5a06a3ce363d7e02c24212f33
-N
 src/main/kotlin/domain/Seat.kt,9\5\959745a1cb92ab916677e2cf5390ac23f504a8e3
 T
 $src/main/kotlin/domain/Complement.kt,0\2\02b58c8a13fccddaceb2e632f236182a5e4a243d
